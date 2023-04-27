@@ -1,3 +1,16 @@
+## OPHIR ASSIGNMENT
+At Ophir Institute,We were asked to build a mini BANK that accepts deposit and grant withdrawal.
+
+### How did I build it.
+Here is how I built it:
+- I wrote the Solidity Smart Contract using my skills and AI
+[Code]()
+- I bult the Front-End application using Next Js and Tailwind CSS.
+- Connected The Front-End to Back-End using  Thirdweb.
+
+You can clone this repository.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
