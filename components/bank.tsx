@@ -32,19 +32,21 @@ const Bank = () =>{
      };   
 
     return(
-        <section>
-            <div>
+        <section className={`flex justify-center items-center ${styles.paddingY}`}>
+            <div className='sm:flex  grid-cols-2 gap-2 '>
                 <div>
-                <h3>Deposit Your $GWR</h3>
-                <p>
-                    Balance of GWR
+                <div className='border rounded-md py-5 px-1 content-center'>
+                <h3 className='font-semibold text-center pb-3'>Deposit Your $GWR</h3>
+                <p className="text-[12px] text-center text-black rounded-md  pb-3">
+                    Balance of $GWR
                     <br/>{gwrTokenBalance?.displayValue}
                 </p>
                 <input
-                placeholder="0"
+                placeholder="Deposit"
                 value={amountToDeposit}
                 onChange={(e) => setAmountToDeposit(e.target.value)}
-                className=""/>
+                className="w-2/3  h-10 rounded-md bg-neutral-900  border-black pb-3  mx-auto flex justify-center items-center"/>
+                <div className='px-12 py-2 flex justify-center items-center'>
                 {transactionSuccessful? (
                  <Web3Button
                  contractAddress={bankAddress}
@@ -66,19 +68,22 @@ const Bank = () =>{
                 </Web3Button>
                 )}
                 </div>
-
+                </div>
+                </div>
                 <div>
-                <h3>Withdraw Your $GWR</h3>
-                <p>
+                <div className='border rounded-md py-5 px-10 content-center'>
+                <h3 className='font-semibold text-center pb-3'>Withdraw Your $GWR</h3>
+                <p className="text-[12px] text-center text-black rounded-md  pb-3">
                     Deposited $GWR
                     <br/>
                     {balanceinfo && ethers.utils.formatEther(balanceinfo.toString())}
                 </p>
                 <input
-                placeholder="0"
+                placeholder="Withdraw"
                 value={amountToWithdraw}
                 onChange={(e) => setAmountToWithdraw(e.target.value)}
-                className=""/>
+                className="w-2/3  h-10 rounded-md bg-neutral-900  border-black pb-3  mx-auto flex justify-center items-center"/>
+                <div className='px-12 py-2 flex justify-center items-center'>
                 <Web3Button
                 contractAddress={bankAddress}
                 action={(contract) => {
@@ -87,6 +92,8 @@ const Bank = () =>{
                 >Withdraw</Web3Button>
                 </div>
                 </div>
+            </div>
+            </div>
         </section>
     )
 }
