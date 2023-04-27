@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className="w-full  flex py-6 justify-between items-center navbar ">
             <img
-            src=''
+            src='/logo.png'
             alt='logo'
             />
 
