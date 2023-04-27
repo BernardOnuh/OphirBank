@@ -7,7 +7,7 @@ import styles from '@/styles/style';
 const Bank = () =>{
     const [amountToDeposit, setAmountToDeposit] = useState('')
     const [ amountToWithdraw, setAmountToWithdraw] =useState('');
-    const bankAddress ='0x2a54C6FB7e6F1d5d21206F95ca8E67AE47f08C87';
+    const bankAddress ='0xa19b6198967DfA0C13B5D01a1ED051724364D472';
     const gwrAddress ='0x3c38896342BB98E95c1BeEB6389729AefAa284a1';
     const { contract } = useContract(bankAddress);
     const [ transactionSuccessful, setTransactionSuccessful] = useState(false);
@@ -33,7 +33,7 @@ const Bank = () =>{
 
     return(
         <section className={`flex justify-center items-center ${styles.paddingY}`}>
-            <div className='sm:flex  grid-cols-2 gap-2 '>
+            <div className='sm:flex  grid-cols-2 gap-2 pb-2'>
                 <div>
                 <div className='border rounded-md py-5 px-1 content-center'>
                 <h3 className='font-semibold text-center pb-3'>Deposit Your $GWR</h3>
