@@ -1,6 +1,10 @@
 ## OPHIR ASSIGNMENT
 At Ophir Institute,We were asked to build a mini BANK that accepts deposit and grant withdrawal.
 
+
+https://user-images.githubusercontent.com/114490070/234925602-60bfb93c-a97d-4648-b852-51181fbea008.mp4
+
+
 ### How did I build it.
 Here is how I built it:
 - I wrote the Solidity Smart Contract using my skills and AI
