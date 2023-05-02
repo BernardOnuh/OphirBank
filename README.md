@@ -1,4 +1,4 @@
-## OPHIR ASSIGNMENT
+## OPHIR BANK
 At Ophir Institute,We were asked to build a mini BANK that accepts deposit and grant withdrawal.
 
 
